@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# C# launcher build artifacts
+launcher/bin/
+launcher/obj/
+launcher/publish/
+
+# Compiled executables (tracked via releases, not source)
+*.exe
+*.pdb
+
+# Tauri codex target dir
+.codex-target/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Claude Code local settings (project settings are fine to commit)
+.claude/settings.local.json
+
+# Environment
+.env
+.env.local
+.env.*.local

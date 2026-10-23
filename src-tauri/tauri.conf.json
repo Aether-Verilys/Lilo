@@ -1,0 +1,41 @@
+{
+  "productName": "Lilo",
+  "version": "0.1.0",
+  "identifier": "app.lilo.todo",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "title": "Lilo 待办",
+        "dragDropEnabled": false,
+        "width": 400,
+        "height": 660,
+        "resizable": true,
+        "minWidth": 340,
+        "minHeight": 500,
+        "decorations": true,
+        "center": true
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "opener": {}
+  }
+}
